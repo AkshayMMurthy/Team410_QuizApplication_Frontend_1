@@ -18,18 +18,18 @@ export default function Main() {
 
   return (
     <div className='container'>
-        <h1 className='title text-light'>Quiz Application</h1>
+        <h1 className='title text-light'>AWS Cloud Practitioner Mock Exam Portal</h1>
 
         <ol>
-            <li>You will be asked 10 questions one after another.</li>
-            <li>10 points is awarded for the correct answer.</li>
-            <li>Each question has three options. You can choose only one options.</li>
-            <li>You can review and change answers before the quiz finish.</li>
-            <li>The result will be declared at the end of the quiz.</li>
+            <li>Welcome to the AWS Cloud Practitioner Mock Exam Quiz!</li>
+            <li>Navigate through the quiz using the 'Next' and 'Previous' buttons.</li>
+            <li>All questions are in multiple-choice format. Choose the best answer </li>
+            <li>Points are awarded for correct answers. There is no penalty for incorrect answers.</li>
+            <li>When you're ready to start, enter your name and click the 'Start Quiz' button. </li>
         </ol>
 
         <form id="form">
-            <input ref={inputRef} className="userid" type="text" placeholder='Username*' />
+            <input ref={inputRef} className="userid" type="text" placeholder='Enter your name' />
         </form>
 
         <div className='start'>

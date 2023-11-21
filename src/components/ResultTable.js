@@ -14,7 +14,15 @@ export default function ResultTable() {
   return (
     <div>
         <table>
+            <thead>
+                <tr className='table-header'>
+                    <td colSpan={4}>
+                        Previous Scores
+                    </td>
+                </tr>
+                </thead>
             <thead className='table-header'>
+
                 <tr className='table-row'>
                     <td>Name</td>
                     <td>Attemps</td>

@@ -1,34 +1,76 @@
-.container ol li{
+/* Updated styles for ordered list items */
+.container ol li {
     font-size: 1.4em;
-    color: #cecece;
+    color: black; /* Slightly darker gray for better readability */
+    margin-bottom: 0.5em; /* Add some spacing between list items */
 }
 
-.start{
+/* Updated styles for the start section */
+.start {
     display: flex;
     justify-content: center;
+    align-items: center; /* Center items vertically */
     padding-top: 2em;
+    background-color: #e6e6e6; /* Light gray background */
 }
 
-.start .btn{
-    padding: .2em 1.7em;
-    border: none;
-    border-radius: .1em;
-    font-size: 1.2em;
-    color: #202020;
-    text-decoration: none;
-    background-color: #faff5a;
+.questions {
+    color:black;
 }
 
-#form{
+.start .btn {
+    background-color: green;
+    color: white; /* White text color */
+    padding: 15px 30px; /* Padding for button */
+    font-size: 20px; /* Font size */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Cursor on hover */
+    outline: none; /* No outline */
+    position: relative;
+    overflow: hidden;
+    font-weight: 500;
+}
+
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+     
+      background-color: rgb(102, 214, 102);
+    }
+    50% {
+      transform: scale(1.05);
+      background-color: rgb(104, 211, 104);
+    }
+    100% {
+      transform: scale(1);
+      background-color: green;
+    }
+  }
+
+.start .btn:hover {
+    
+    animation: pulse 1s infinite;
+      
+}
+
+/* Updated styles for the form section */
+#form {
     display: flex;
     justify-content: center;
     margin-top: 4em;
 }
 
-#form .userid{
-    padding: .7em 2em;
+#form .userid {
+    padding: 0.7em 2em;
     width: 50%;
-    border: none;
-    border-radius: 3px;
+    border: 2px solid #3498db; /* Add a border with a blue color */
+    border-radius: 5px;
     font-size: 1em;
+    transition: border-color 0.3s ease; /* Add a smooth transition effect */
+}
+
+#form .userid:focus {
+    border-color: #2980b9; /* Darker blue on focus */
+    outline: none; /* Remove default focus outline */
 }
