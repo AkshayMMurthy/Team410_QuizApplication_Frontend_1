@@ -20,12 +20,14 @@ export default function Main() {
     <div className='container'>
         <h1 className='title text-light'>AWS Cloud Practitioner Mock Exam Portal</h1>
 
-        <ol>
-            <li>Welcome to the AWS Cloud Practitioner Mock Exam Quiz!</li>
-            <li>Navigate through the quiz using the 'Next' and 'Previous' buttons.</li>
-            <li>All questions are in multiple-choice format. Choose the best answer </li>
-            <li>Points are awarded for correct answers. There is no penalty for incorrect answers.</li>
-            <li>When you're ready to start, enter your name and click the 'Start Quiz' button. </li>
+        <ol type='a'>
+            <li>- Welcome to the AWS Cloud Practitioner Mock Exam Quiz!</li>    
+            <li>- Navigate through the quiz using the 'Next' and 'Previous' buttons.</li>
+            <li>- All questions are in multiple-choice format. Choose the best answer </li>
+            <li>- Points are awarded for correct answers. There is no negative marking</li>
+            <li>- There are 10 questions in total. Each question carries 10 points </li>
+            <li>- You will require 70/100 points to pass this mock exam. </li>
+            <li>- When you're ready to start, enter your name and click the 'Start Quiz' button. </li>
         </ol>
 
         <form id="form">

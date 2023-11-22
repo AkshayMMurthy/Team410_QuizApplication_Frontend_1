@@ -42,28 +42,34 @@ export default function Result() {
 
         <div className='result flex-center'>
             <div className='flex'>
-                <span>Username</span>
+                <span>Name</span>
                 <span className='bold'>{userId || ""}</span>
             </div>
-            <div className='flex'>
-                <span>Total Quiz Points : </span>
-                <span className='bold'>{totalPoints || 0}</span>
-            </div>
+
             <div className='flex'>
                 <span>Total Questions : </span>
-                <span className='bold'>{ queue.length || 0}</span>
+                <span className='bold'>{ 10 || 0}</span>
+            </div>
+
+            <div className='flex'>
+                <span>Total Questions Attempted : </span>
+                <span className='bold'>{attempts || 0}/10</span>
+            </div>
+
+
+
+            <div className='flex'>
+                <span>Maximum Marks : </span>
+                <span className='bold'>{100 || 0}</span>
+            </div>
+
+            <div className='flex'>
+                <span>Marks Scored : </span>
+                <span className='bold'>{earnPoints || 0}/100</span>
             </div>
             <div className='flex'>
-                <span>Total Attempts : </span>
-                <span className='bold'>{attempts || 0}</span>
-            </div>
-            <div className='flex'>
-                <span>Total Earn Points : </span>
-                <span className='bold'>{earnPoints || 0}</span>
-            </div>
-            <div className='flex'>
-                <span>Quiz Result</span>
-                <span style={{ color : `${flag ? "#2aff95" : "#ff2a66" }` }} className='bold'>{flag ? "Passed" : "Failed"}</span>
+                <span>Final Result</span>
+                <span style={{ color : `${flag ? "#2aff95" : "#ff2a66" }` }} className='bold'>Certified Cloud Practitioner {flag ? "Passed" : "Failed"}</span>
             </div>
         </div>
 

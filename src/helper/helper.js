@@ -32,3 +32,27 @@ export async function postServerData(url, result, callback){
     const data = await (await axios.post(url, result))?.data;
     return callback ? callback(data) : data;
 }
+
+
+export const deleteAllRecords = async () => {
+    try {
+      const response = await fetch(`${process.env.REACT_APP_SERVER_HOSTNAME}/api/deleteAllRecords`, {
+        method: 'DELETE',
+        headers: {
+          'Content-Type': 'application/json',
+          // Include any other headers as needed
+        },
+      });
+  
+      if (!response.ok) {
+        throw new Error('Failed to delete all records');
+      }
+  
+      const result = await response.json();
+  
+      return result; // Return the result of the deletion operation
+    } catch (error) {
+      console.error('Error:', error);
+      throw error; // Re-throw the error to handle it in the calling code
+    }
+  };

@@ -28,7 +28,7 @@ export default function Questions({ onChecked }) {
     }
 
 
-    if(isLoading) return <h3 className='text-light'>Retrieving questions...</h3>
+    if(isLoading) return <h3 className='text-light'>Retrieving questions... This can take upto a minute</h3>
     if(serverError) return <h3 className='text-light'>{serverError.message || "Unknown Error"}</h3>
 
   return (

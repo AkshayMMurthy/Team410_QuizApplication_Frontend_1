@@ -26,26 +26,24 @@
 
 table {
     width: 100%;
-    
-}
-
-.table-header {
-    color: #cecece;
+  }
+  
+  .table-header {
+    color: #ffffff; /* White text color */
     font-size: 1.1em;
     text-align: center;
-    background: #212121;
+    background: #FF5733; /* Orange background color */
     padding: 18px 0;
-}
-
-.table-body {
+  }
+  
+  .table-body {
     font-size: 1.1em;
     text-align: center;
-    /* color: #cecece; */
-    background: #d8d8d8;
+    color: #333333; /* Dark text color */
+    background: #d8d8d8; /* Light gray background color */
     padding: 18px 0;
-    
-}
-
-.table-header > tr > td{
-    border: 1px solid #faff5a;   
-}
+  }
+  
+  .table-header > tr > td {
+    border: 1px solid #faff5a;
+  }

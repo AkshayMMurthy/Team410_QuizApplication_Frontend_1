@@ -1,5 +1,6 @@
 /* Updated styles for ordered list items */
 .container ol li {
+    
     font-size: 1.4em;
     color: black; /* Slightly darker gray for better readability */
     margin-bottom: 0.5em; /* Add some spacing between list items */
@@ -12,6 +13,7 @@
     align-items: center; /* Center items vertically */
     padding-top: 2em;
     background-color: #e6e6e6; /* Light gray background */
+
 }
 
 .questions {
@@ -19,7 +21,7 @@
 }
 
 .start .btn {
-    background-color: green;
+    background-color: #FF5733;
     color: white; /* White text color */
     padding: 15px 30px; /* Padding for button */
     font-size: 20px; /* Font size */
@@ -29,6 +31,7 @@
     outline: none; /* No outline */
     position: relative;
     overflow: hidden;
+    
     font-weight: 500;
 }
 
@@ -36,7 +39,7 @@
     0% {
       transform: scale(1);
      
-      background-color: rgb(102, 214, 102);
+      background-color: rgb(186, 214, 102);
     }
     50% {
       transform: scale(1.05);
