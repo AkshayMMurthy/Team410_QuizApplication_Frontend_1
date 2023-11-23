@@ -43,7 +43,7 @@ export default function ResultTable() {
                     <td>Questions Attempted</td>
                     <td>Correct Questions (of 10)</td>
                     <td>Total Score (of 100)</td>
-                    <td>Result</td>
+                    <td>Literacy</td>
                 </tr>
             </thead>
         <tbody>

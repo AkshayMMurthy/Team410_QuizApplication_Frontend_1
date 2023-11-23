@@ -29,7 +29,7 @@ export default function Result() {
         username : userId,
         attempts,
         points: earnPoints,
-        achived : flag ? "Passed" : "Failed" });
+        achived : flag ? "Literate" : "Not Literate" });
 
     function onRestart(){
         dispatch(resetAllAction())
@@ -68,13 +68,13 @@ export default function Result() {
                 <span className='bold'>{earnPoints || 0}/100</span>
             </div>
             <div className='flex'>
-                <span>Final Result</span>
+                <span>Literacy Level</span>
                 <span style={{ color : `${flag ? "#0bb807" : "#ff2a66" }` }} className='bold'> {flag ? "Financially Literate" : "Not Financially literate"}</span>
             </div>
         </div>
 
         <div className="start">
-            <Link className='btn' to={'/'} onClick={onRestart}>Restart</Link>
+            <Link className='btn' to={'/'} onClick={onRestart}>Take quiz again</Link>
         </div>
 
         <div className="container">
