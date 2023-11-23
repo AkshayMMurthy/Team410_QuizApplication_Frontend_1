@@ -38,7 +38,7 @@ export default function Result() {
 
   return (
     <div className='container'>
-        <h1 className='title text-light'>Exam Result</h1>
+        <h1 className='title text-light'>Quiz Result</h1>
 
         <div className='result flex-center'>
             <div className='flex'>
@@ -52,8 +52,8 @@ export default function Result() {
             </div>
 
             <div className='flex'>
-                <span>Total Questions Attempted : </span>
-                <span className='bold'>{attempts || 0}/10</span>
+                <span>Questions Answered Correctly : </span>
+                <span className='bold'>{earnPoints/10 || 0}/10</span>
             </div>
 
 
@@ -69,7 +69,7 @@ export default function Result() {
             </div>
             <div className='flex'>
                 <span>Final Result</span>
-                <span style={{ color : `${flag ? "#2aff95" : "#ff2a66" }` }} className='bold'>Certified Cloud Practitioner {flag ? "Passed" : "Failed"}</span>
+                <span style={{ color : `${flag ? "#0bb807" : "#ff2a66" }` }} className='bold'> {flag ? "Financially Literate" : "Not Financially literate"}</span>
             </div>
         </div>
 
