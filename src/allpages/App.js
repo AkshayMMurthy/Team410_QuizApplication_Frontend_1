@@ -1,13 +1,13 @@
-import '../styles/App.css';
+import '../design/first.css';
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 /** import components */
-import Main from './Main';
-import Quiz from './Quiz';
-import Result from './Result';
+import Main from './Startpage';
+import Quiz from './quizrender';
+import Result from './Score';
 
-import { CheckUserExist } from '../helper/helper';
+import { CheckUserExist } from '../functionsfetch/serverfunctions';
 
 
 /** react routes */

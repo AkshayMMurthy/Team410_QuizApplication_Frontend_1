@@ -1,15 +1,15 @@
 import React, { useEffect } from 'react'
-import '../styles/Result.css';
+import '../design/score.css';
 import { Link } from 'react-router-dom';
 
-import ResultTable from './ResultTable';
+import ResultTable from './Leaderboard';
 import { useDispatch, useSelector } from 'react-redux';
-import { attempts_Number, earnPoints_Number, flagResult } from '../helper/helper';
+import { attempts_Number, earnPoints_Number, flagResult } from '../functionsfetch/serverfunctions';
 
 /** import actions  */
-import { resetAllAction } from '../redux/question_reducer';
-import { resetResultAction } from '../redux/result_reducer';
-import { usePublishResult } from '../hooks/setResult';
+import { resetAllAction } from '../toolkit/stateq';
+import { resetResultAction } from '../toolkit/stater';
+import { usePublishResult } from '../statechanges/givescore';
 
 
 export default function Result() {

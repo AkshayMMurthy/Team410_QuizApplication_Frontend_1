@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { getServerData, deleteAllRecords } from '../helper/helper';
+import { getServerData, deleteAllRecords } from '../functionsfetch/serverfunctions';
 
 export default function ResultTable() {
   const [data, setData] = useState([]);

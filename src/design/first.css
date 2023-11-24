@@ -11,7 +11,7 @@ body, html {
   background: var(--dark-color);
   margin: 0;
   padding: 0;
-  background-image: url("../components/aws1.png");
+  background-image: url("../allpages/aws1.png");
 }
 
 * > * {

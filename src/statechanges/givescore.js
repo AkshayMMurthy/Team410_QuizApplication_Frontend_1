@@ -1,5 +1,5 @@
-import { postServerData } from '../helper/helper'
-import * as Action from '../redux/result_reducer'
+import { postServerData } from '../functionsfetch/serverfunctions'
+import * as Action from '../toolkit/stater'
 
 export const PushAnswer = (result) => async (dispatch) => {
     try {

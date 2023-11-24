@@ -3,8 +3,8 @@ import { useDispatch, useSelector } from 'react-redux'
 
 
 /** Custom Hook */
-import { useFetchQestion } from '../hooks/FetchQuestion'
-import { updateResult } from '../hooks/setResult'
+import { useFetchQestion } from '../statechanges/renderquiz'
+import { updateResult } from '../statechanges/givescore'
 
 
 export default function Questions({ onChecked }) {

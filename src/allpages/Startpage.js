@@ -1,8 +1,8 @@
 import React, { useRef } from 'react'
 import { useDispatch } from 'react-redux'
 import { Link } from 'react-router-dom'
-import { setUserId } from '../redux/result_reducer'
-import '../styles/Main.css'
+import { setUserId } from '../toolkit/stater'
+import '../design/startpage.css'
 
 export default function Main() {
 

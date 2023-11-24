@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import Questions from './Questions'
+import Questions from './Template'
 
-import { MoveNextQuestion, MovePrevQuestion } from '../hooks/FetchQuestion';
-import { PushAnswer } from '../hooks/setResult';
+import { MoveNextQuestion, MovePrevQuestion } from '../statechanges/renderquiz';
+import { PushAnswer } from '../statechanges/givescore';
 
 /** redux store import */
 import { useSelector, useDispatch } from 'react-redux'
